@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.nav-container{
+  font-size: 2rem;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-item{
+  width: 24%;
+  height: 5rem;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+
+.category-item:hover{
+  color:#e69a86;
+  cursor: pointer;
+}
+
+.inner{
+  padding: 0 1.5rem;
+}
+
+.category-title{
+  font-size: 3rem;
+}
+
+.nav-contact{
+  font-size: 2.5rem;
+  align-self: flex-end;
+  cursor: pointer;
+  background:none;
+  border: none;
+  font-family: inherit;
+}
+
+@media all and (min-width: 1024px) {
+  .inner{
+    max-width: 1024px;
+    margin: 0 auto;  /* 여백이 생기면 적절하게 */
+  }
+
+}
+
+nav{
+  height: 59px;
+}
+
+main{
+  padding-top: 1.5rem;
+  height: calc(100% - 59px);
+  display: flex;
+  flex-direction: column;
+}
+
+body{
+  height: 100vh;
+}
+
+/* 카카오맵 css */
+#map{
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./map.css">
+  <title>맛집지도만들기</title>
+</head>
+<body>
+  <nav>
+    <div class="inner">
+      <div class = "nav-container">
+        <h1 class="nav-title">맛집지도</h1>
+        <button class = "nav-contact">Contact</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- 카테고리 -->
+    <section id="category">
+      <div class="inner">
+        <div class="category-container">
+          <h2 class="category-title">맛집지도 카테고리를 선택해보세요</h2>
+          <div class="category-list">
+            <button class="category-item" id="korea">한식</button>
+            <button class="category-item" id="china">중식</button>
+            <button class="category-item" id="japen">일식</button>
+            <button class="category-item" id="america">양식</button>
+            <button class="category-item" id="wheat">분식</button>
+            <button class="category-item" id="meat">구이</button>
+            <button class="category-item" id="sushi">회/초밥</button>
+            <button class="category-item" id="etc">기타</button>
+          </div>
+        </div>        
+      </div>
+    </section>
+    <!-- 카카오지도 -->
+    <div id="map" class="inner"></div>   
+  </main>  
+
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e2d4c7a2217835608a989781e017155f&libraries=services"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.0/axios.min.js" integrity="sha512-OdkysyYNjK4CZHgB+dkw9xQp66hZ9TLqmS2vXaBrftfyJeduVhyy1cOfoxiKdi4/bfgpco6REu6Rb+V2oVIRWg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./axios-script.js"></script>
+</body>
+</html>
